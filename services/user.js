@@ -28,7 +28,7 @@ class UserService {
 
         user.actionHistorys.push({
             action: "Account Registration",
-            actionResult: "SUCCEESED",
+            actionResult: "SUCCEEDED",
             tokenAndDeviceId: user.tokensAndDevices[0]._id,
             itemId: user._id,
         });

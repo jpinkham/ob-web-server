@@ -20,7 +20,7 @@ class AdminService {
 
             admin.actionHistorys.push({
                 action: "Account Registration",
-                actionResult: "SUCCEESED",
+                actionResult: "SUCCEEDED",
                 tokenAndDeviceId: admin._id,
                 itemId: admin._id,
             });
@@ -89,7 +89,7 @@ class AdminService {
 
         admin.actionHistorys.push({
             action: "VERIFIY TOTP TOKEN",
-            actionResult: "SUCCEESED",
+            actionResult: "SUCCEEDED",
             tokenAndDeviceId: admin._id,
             itemId: admin._id,
         });
@@ -127,7 +127,7 @@ class AdminService {
             }
             admin.actionHistorys.push({
                 action: "Account LOGIN",
-                actionResult: "SUCCEESED",
+                actionResult: "SUCCEEDED",
                 tokenAndDeviceId: admin._id,
                 itemId: admin._id,
             });

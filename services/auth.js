@@ -124,7 +124,7 @@ class AuthService {
 
         user.actionHistorys.push({
             action: "LOGIN",
-            actionResult: "SUCCEESED",
+            actionResult: "SUCCEEDED",
             tokenAndDeviceId: tokenAndDeviceId,
             itemId: user._id,
         });
@@ -353,7 +353,7 @@ class AuthService {
 
             user.actionHistorys.push({
                 action: "LOGIN",
-                actionResult: "SUCCEESED",
+                actionResult: "SUCCEEDED",
                 tokenAndDeviceId: tokenAndDeviceId,
                 itemId: user._id,
             });

@@ -279,7 +279,7 @@ class SeaPodService {
 
         seapod.actionsHistory.push({
             action: "Sea Pod Creation",
-            actionResult: "SUCCEESED",
+            actionResult: "SUCCEEDED",
             userId: user._id,
             userName: user.getUserName(),
             userType: 'OWNER'

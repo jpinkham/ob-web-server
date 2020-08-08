@@ -1824,7 +1824,7 @@
         {
           "_id": "5f0483edfb3b3621dc3d8a11",
           "action": "Sea Pod Creation",
-          "actionResult": "SUCCEESED",
+          "actionResult": "SUCCEEDED",
           "userId": "5f0483edfb3b3621dc3d8a0c",
           "userName": "John Doe",
           "userType": "OWNER"
@@ -1905,7 +1905,7 @@
         {
           "_id": "5f04843cfb3b3621dc3d8aac",
           "action": "Sea Pod Creation",
-          "actionResult": "SUCCEESED",
+          "actionResult": "SUCCEEDED",
           "userId": "5f0483edfb3b3621dc3d8a0c",
           "userName": "John Doe",
           "userType": "OWNER"
@@ -1980,7 +1980,7 @@
         {
           "_id": "5f048f4622b90a15806595a7",
           "action": "Sea Pod Creation",
-          "actionResult": "SUCCEESED",
+          "actionResult": "SUCCEEDED",
           "userId": "5f048f4622b90a15806595a2",
           "userName": "Abdullah Asad",
           "userType": "OWNER"
@@ -2136,7 +2136,7 @@
         {
           "_id": "5f0483edfb3b3621dc3d8a0e",
           "action": "Account Registration",
-          "actionResult": "SUCCEESED",
+          "actionResult": "SUCCEEDED",
           "tokenAndDeviceId": "5f0483edfb3b3621dc3d8a0d",
           "itemId": "5f0483edfb3b3621dc3d8a0c"
         }
@@ -2248,7 +2248,7 @@
         {
           "_id": "5f04871afb3b3621dc3d8ba9",
           "action": "Account Registration",
-          "actionResult": "SUCCEESED",
+          "actionResult": "SUCCEEDED",
           "tokenAndDeviceId": "5f04871afb3b3621dc3d8ba8",
           "itemId": "5f048719fb3b3621dc3d8ba7"
         }
@@ -2319,7 +2319,7 @@
         {
           "_id": "5f048d7622b90a158065957d",
           "action": "Account Registration",
-          "actionResult": "SUCCEESED",
+          "actionResult": "SUCCEEDED",
           "tokenAndDeviceId": "5f048d7622b90a158065957c",
           "itemId": "5f048d7522b90a158065957b"
         }
@@ -2392,7 +2392,7 @@
         {
           "_id": "5f048f4622b90a15806595a4",
           "action": "Account Registration",
-          "actionResult": "SUCCEESED",
+          "actionResult": "SUCCEEDED",
           "tokenAndDeviceId": "5f048f4622b90a15806595a3",
           "itemId": "5f048f4622b90a15806595a2"
         }
