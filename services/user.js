@@ -6,13 +6,13 @@ const { User, validatePassword } = require('../models/users/user');
 const { filterUserTokensAndDevices } = require('../helpers/filtering');
 const { MailService } = require('./mail');
 
-const slatRounds = config.get("userSalt");
+const saltRounds = config.get("userSalt");
 
 class UserService {
     async createUser(obj) {
         const user = new User(obj.userData);
 
-        const salt = await bcrypt.genSalt(slatRounds);
+        const salt = await bcrypt.genSalt(saltRounds);
         user.password = await bcrypt.hash(user.password, salt);
 
         const jti = uuidv4();
@@ -78,7 +78,7 @@ class UserService {
             error: 'Invalid password'
         };
 
-        const salt = await bcrypt.genSalt(slatRounds);
+        const salt = await bcrypt.genSalt(saltRounds);
         const newPassword = await bcrypt.hash(obj.newPassword, salt);
 
         const isUsedPreviously = await this.isPasswordUserPreviously(obj.newPassword, user.previousPasswords);
@@ -186,7 +186,7 @@ class UserService {
             'message': passwordValidationResult.error.message
         };
 
-        const salt = await bcrypt.genSalt(slatRounds);
+        const salt = await bcrypt.genSalt(saltRounds);
         const password = await bcrypt.hash(newPassword, salt);
 
         const isUsedPreviously = await this.isPasswordUserPreviously(newPassword, user.previousPasswords);

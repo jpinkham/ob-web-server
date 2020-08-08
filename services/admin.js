@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const speakeasy = require('speakeasy');
 const config=require('config');
 
-const slatRounds = config.get('adminSalt');
+const saltRounds = config.get('adminSalt');
 
 class AdminService {
     async createAdmin(req) {
@@ -15,7 +15,7 @@ class AdminService {
         try {
             const admin = new Admin(req);
 
-            const salt = await bcrypt.genSalt(slatRounds);
+            const salt = await bcrypt.genSalt(saltRounds);
             admin.password = await bcrypt.hash(admin.password, salt);
 
             admin.actionHistorys.push({
@@ -81,7 +81,7 @@ class AdminService {
             error: "User not found!"
         };
 
-        const salt = await bcrypt.genSalt(slatRounds);
+        const salt = await bcrypt.genSalt(saltRounds);
         const adminJwt = admin.generateAuthToken();
         const eAdminJwt = await bcrypt.hash(adminJwt, salt);
 
