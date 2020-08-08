@@ -63,7 +63,7 @@ const RequestAccess = mongoose.model('ReqestAccess', new mongoose.Schema({
         type: String,
         enum: ['PENDING', 'CANCELED', 'REJECTED', 'ACCEPTED']
     },
-    isRecieved: {
+    isReceived: {
         type: Boolean,
         required: true
     },

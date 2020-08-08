@@ -165,7 +165,7 @@ class AccessManagement {
             period: request.period,
             status: 'PENDING',
             checkIn: request.checkIn,
-            isRecieved: false,
+            isReceived: false,
             senderId: user._id,
         });
     }
@@ -409,7 +409,7 @@ class AccessManagement {
                 period: 0,
                 status: 'PENDING',
                 checkIn: Date.now(),
-                isRecieved: true,
+                isReceived: true,
                 senderId: senderId,
                 recieverId: user._id,
                 permissionSetId: body.permissionSetId
@@ -740,7 +740,7 @@ class AccessManagement {
         let sentInvitations = [], sentRequests = [];
         const sentAccess = await RequestAccess.find({ senderId: userId });
         sentAccess.forEach(async access => {
-            access.isRecieved == true ? sentInvitations.push(access) : sentRequests.push(access)
+            access.isReceived == true ? sentInvitations.push(access) : sentRequests.push(access)
         });
 
         const receivedInvitations = await RequestAccess.find({ recieverId: userId });

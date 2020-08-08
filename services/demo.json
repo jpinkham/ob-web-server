@@ -2039,7 +2039,7 @@
             "type": "GUEST",
             "status": "PENDING",
             "checkIn": 1581191756216,
-            "isRecieved": false,
+            "isReceived": false,
             "senderId": "5f048719fb3b3621dc3d8ba7",
             "__v": 0
           }
@@ -2068,7 +2068,7 @@
             "type": "MEMBER",
             "status": "PENDING",
             "checkIn": 1581191756216,
-            "isRecieved": false,
+            "isReceived": false,
             "senderId": "5f048d7522b90a158065957b",
             "__v": 0
           }
@@ -2097,7 +2097,7 @@
             "type": "MEMBER",
             "status": "CANCELED",
             "checkIn": 1581191756216,
-            "isRecieved": false,
+            "isReceived": false,
             "senderId": "5f048d7522b90a158065957b",
             "__v": 0
           }
@@ -2126,7 +2126,7 @@
             "type": "MEMBER",
             "status": "PENDING",
             "checkIn": 1581191756216,
-            "isRecieved": false,
+            "isReceived": false,
             "senderId": "5f048d7522b90a158065957b",
             "__v": 0
           }
@@ -2207,7 +2207,7 @@
             "type": "GUEST",
             "status": "ACCEPTED",
             "checkIn": 1581191756216,
-            "isRecieved": false,
+            "isReceived": false,
             "senderId": "5f048719fb3b3621dc3d8ba7",
             "__v": 0,
             "permissionSetId": "5f048688fb3b3621dc3d8b67"
@@ -2237,7 +2237,7 @@
             "type": "GUEST",
             "status": "ACCEPTED",
             "checkIn": 1581191756216,
-            "isRecieved": false,
+            "isReceived": false,
             "senderId": "5f048719fb3b3621dc3d8ba7",
             "__v": 0,
             "permissionSetId": "5f048688fb3b3621dc3d8b67"
@@ -2309,7 +2309,7 @@
             "type": "MEMBER",
             "status": "REJECTED",
             "checkIn": 1581191756216,
-            "isRecieved": false,
+            "isReceived": false,
             "senderId": "5f048d7522b90a158065957b",
             "__v": 0
           }
@@ -2381,7 +2381,7 @@
             "type": "MEMBER",
             "status": "PENDING",
             "checkIn": 1594134547451,
-            "isRecieved": true,
+            "isReceived": true,
             "senderId": "5f0483edfb3b3621dc3d8a0c",
             "recieverId": "5f048f4622b90a15806595a2",
             "permissionSetId": "5f04869dfb3b3621dc3d8b88"
@@ -2438,7 +2438,7 @@
       "type": "GUEST",
       "status": "ACCEPTED",
       "checkIn": 1581191756216,
-      "isRecieved": false,
+      "isReceived": false,
       "senderId": "5f048719fb3b3621dc3d8ba7",
       "__v": 0,
       "permissionSetId": "5f048688fb3b3621dc3d8b67"
@@ -2461,7 +2461,7 @@
       "type": "MEMBER",
       "status": "CANCELED",
       "checkIn": 1581191756216,
-      "isRecieved": false,
+      "isReceived": false,
       "senderId": "5f048d7522b90a158065957b",
       "__v": 0
     },
@@ -2483,7 +2483,7 @@
       "type": "MEMBER",
       "status": "REJECTED",
       "checkIn": 1581191756216,
-      "isRecieved": false,
+      "isReceived": false,
       "senderId": "5f048d7522b90a158065957b",
       "__v": 0
     },
@@ -2505,7 +2505,7 @@
       "type": "MEMBER",
       "status": "PENDING",
       "checkIn": 1594134547451,
-      "isRecieved": true,
+      "isReceived": true,
       "senderId": "5f0483edfb3b3621dc3d8a0c",
       "permissionSetId": "5f04869dfb3b3621dc3d8b88",
       "__v": 0
