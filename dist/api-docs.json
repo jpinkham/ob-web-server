@@ -2832,7 +2832,7 @@
                 "period": {
                   "type": "integer"
                 },
-                "vessleCode": {
+                "vesselCode": {
                   "type": "string"
                 },
                 "checkIn": {
@@ -2842,7 +2842,7 @@
               "example": {
                 "type": "GUEST",
                 "period": 86400000,
-                "vessleCode": "S0F83ED",
+                "vesselCode": "S0F83ED",
                 "checkIn": 1581191756216
               }
             }
@@ -2942,7 +2942,7 @@
                     "period": {
                       "type": "integer"
                     },
-                    "vessleCode": {
+                    "vesselCode": {
                       "type": "string"
                     },
                     "checkIn": {
@@ -2963,7 +2963,7 @@
                 "request": {
                   "type": "GUEST",
                   "period": 86400000,
-                  "vessleCode": "SAA843C",
+                  "vesselCode": "SAA843C",
                   "checkIn": 1581191756216
                 }
               }

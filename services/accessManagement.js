@@ -25,7 +25,7 @@ class AccessManagement {
             obj.jt = jt;
 
             const seaPod = await SeaPod.findOne({
-                vessleCode: obj.request.vessleCode
+                vesselCode: obj.request.vesselCode
             });
 
             if (!seaPod) {
@@ -62,7 +62,7 @@ class AccessManagement {
         try {
             const accessRequest = await RequestAccess.findOne({
                 'user._id': obj.user._id,
-                'seaPod.vessleCode': obj.body.vessleCode,
+                'seaPod.vesselCode': obj.body.vesselCode,
                 'status': 'PENDING'
             });
 
@@ -93,7 +93,7 @@ class AccessManagement {
                     const seaPod = await SeaPod.findById(accessRequest.seaPod._id);
 
                     const notificationData = {
-                        title: `${accessRequest.user.name} updated his access request to your SeaPod ${accessRequest.seaPod.name} (${accessRequest.seaPod.vessleCode}) for ${this.formatePeriodTime(accessRequest.period)} starting on ${this.formateCheckInDate(accessRequest.checkIn)}`,
+                        title: `${accessRequest.user.name} updated his access request to your SeaPod ${accessRequest.seaPod.name} (${accessRequest.seaPod.vesselCode}) for ${this.formatePeriodTime(accessRequest.period)} starting on ${this.formateCheckInDate(accessRequest.checkIn)}`,
                         message: 'SEAPOD ACCESS REQUEST UPDATE',
                         data: accessRequest.toJSON(),
                         type: 'access_request_update'
@@ -122,7 +122,7 @@ class AccessManagement {
                 }
 
                 const seaPod = await SeaPod.findOne({
-                    vessleCode: obj.body.vessleCode
+                    vesselCode: obj.body.vesselCode
                 });
 
                 if (!seaPod) {
@@ -159,7 +159,7 @@ class AccessManagement {
             seaPod: {
                 _id: seaPod._id,
                 name: seaPod.SeaPodName,
-                vessleCode: seaPod.vessleCode
+                vesselCode: seaPod.vesselCode
             },
             type: request.type,
             period: request.period,
@@ -185,7 +185,7 @@ class AccessManagement {
             accessRequest.checkIn = this.formateCheckInDate(accessRequest.checkIn);
 
             const notificationData = {
-                title: `${accessRequest.user.name} has requested access to your SeaPod ${accessRequest.seaPod.name} (${accessRequest.seaPod.vessleCode}) for ${this.formatePeriodTime(accessRequest.period)} starting on ${this.formateCheckInDate(accessRequest.checkIn)}`,
+                title: `${accessRequest.user.name} has requested access to your SeaPod ${accessRequest.seaPod.name} (${accessRequest.seaPod.vesselCode}) for ${this.formatePeriodTime(accessRequest.period)} starting on ${this.formateCheckInDate(accessRequest.checkIn)}`,
                 message: 'SEAPOD ACCESS REQUEST',
                 data: accessRequest.toJSON(),
                 type: 'access_request'
@@ -285,7 +285,7 @@ class AccessManagement {
         const seapodUsers = await SeaPod.findById(accessRequest.seaPod._id).select('users');
 
         const notificationData = {
-            title: `${accessRequest.user.name} canceled his access request to your SeaPod ${accessRequest.seaPod.name} (${accessRequest.seaPod.vessleCode}) for ${this.formatePeriodTime(accessRequest.period)} starting on ${this.formateCheckInDate(accessRequest.checkIn)}`,
+            title: `${accessRequest.user.name} canceled his access request to your SeaPod ${accessRequest.seaPod.name} (${accessRequest.seaPod.vesselCode}) for ${this.formatePeriodTime(accessRequest.period)} starting on ${this.formateCheckInDate(accessRequest.checkIn)}`,
             message: 'SEAPOD ACCESS REQUEST UPDATE',
             data: accessRequest.toJSON(),
             type: 'access_request_cancelation'
@@ -324,7 +324,7 @@ class AccessManagement {
         await accessRequest.save();
 
         const notificationData = {
-            title: `Your Request to access ${accessRequest.seaPod.name}(${accessRequest.seaPod.vessleCode}) has been REJECTED`,
+            title: `Your Request to access ${accessRequest.seaPod.name}(${accessRequest.seaPod.vesselCode}) has been REJECTED`,
             message: `SEAPOD ACCESS REQUEST REJECTED`,
             data: accessRequest.toJSON(),
             type: 'access_request_rejection'
@@ -403,7 +403,7 @@ class AccessManagement {
                 seaPod: {
                     _id: seapod._id,
                     name: seapod.SeaPodName,
-                    vessleCode: seapod.vessleCode
+                    vesselCode: seapod.vesselCode
                 },
                 type: "MEMBER",
                 period: 0,
@@ -512,7 +512,7 @@ class AccessManagement {
             await session.commitTransaction();
 
             const notificationData = {
-                title: `Your Request to access ${accessRequest.seaPod.name}(${accessRequest.seaPod.vessleCode}) has been ACEPTED`,
+                title: `Your Request to access ${accessRequest.seaPod.name}(${accessRequest.seaPod.vesselCode}) has been ACEPTED`,
                 message: `SEAPOD ACCESS REQUEST UPDATE`,
                 data: accessRequest.toJSON(),
                 type: 'access_request_approval'
@@ -601,7 +601,7 @@ class AccessManagement {
             await session.commitTransaction();
 
             const notificationData = {
-                title: `${accessInvitation.user.name} is now a member at ${accessInvitation.seaPod.name}(${accessInvitation.seaPod.vessleCode}) Sea Pod`,
+                title: `${accessInvitation.user.name} is now a member at ${accessInvitation.seaPod.name}(${accessInvitation.seaPod.vesselCode}) Sea Pod`,
                 message: `SEAPOD INVITATION ACCEPT`,
                 data: accessInvitation.toJSON(),
                 type: 'access_invitation_approval'
@@ -650,7 +650,7 @@ class AccessManagement {
         await accessInvitation.save();
 
         const notificationData = {
-            title: `${accessInvitation.user.name} refused your invitation to access ${accessInvitation.seaPod.name}(${accessInvitation.seaPod.vessleCode}) Sea Pod`,
+            title: `${accessInvitation.user.name} refused your invitation to access ${accessInvitation.seaPod.name}(${accessInvitation.seaPod.vesselCode}) Sea Pod`,
             message: `SEAPOD ACCESS INVITATION UPDATE`,
             data: accessInvitation.toJSON(),
             type: 'access_invitation_rejection'
@@ -697,7 +697,7 @@ class AccessManagement {
 
 
         const notificationData = {
-            title: `Your Invitation to ${accessInvitation.seaPod.name} (${accessInvitation.seaPod.vessleCode}) has been canceled by the owner`,
+            title: `Your Invitation to ${accessInvitation.seaPod.name} (${accessInvitation.seaPod.vesselCode}) has been canceled by the owner`,
             message: 'SEAPOD ACCESS INVITATION UPDATE',
             data: accessInvitation.toJSON(),
             type: 'access_invitaion_cancelation'

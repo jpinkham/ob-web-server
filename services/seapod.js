@@ -233,7 +233,7 @@ class SeaPodService {
             await session.commitTransaction();
 
             const notificationData = {
-                title: `You are no longer a member at Sea Pod ${seapod.name} (${seapod.vessleCode})`,
+                title: `You are no longer a member at Sea Pod ${seapod.name} (${seapod.vesselCode})`,
                 message: 'SEAPOD ACCESS UPDATE',
                 data: {
                     "message": `You have been deleted by ${onwerName}`
@@ -285,7 +285,7 @@ class SeaPodService {
             userType: 'OWNER'
         });
         const vesselCode = seapod.generateVesselCode();
-        seapod.vessleCode = vesselCode;
+        seapod.vesselCode = vesselCode;
 
         const qrCodeUrl = await seapod.generateQrCode(vesselCode, hostName);
         seapod.qrCodeImageUrl = qrCodeUrl;

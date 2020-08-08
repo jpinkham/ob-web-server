@@ -15,7 +15,7 @@ const seaPodSchema = new mongoose.Schema({
         minlength: 5,
         maxlength: 50
     },
-    vessleCode: {
+    vesselCode: {
         type: String,
         required: true,
         unique: true

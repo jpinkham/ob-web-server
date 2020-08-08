@@ -5,7 +5,7 @@ describe('accessRequest model', () => {
         const req = new RequestAccess({
             type: "GUEST",
             period: 86400000,
-            vessleCode: "S9F22D1",
+            vesselCode: "S9F22D1",
             checkIn: 1581191756216
         });
         const res = ValidateRequest(req);
@@ -15,7 +15,7 @@ describe('accessRequest model', () => {
     it('should return error if type is missing', () => {
         const req = new RequestAccess({
             period: 86400000,
-            vessleCode: "S9F22D1",
+            vesselCode: "S9F22D1",
             checkIn: 1581191756216
         });
         const res = ValidateRequest(req);
@@ -25,14 +25,14 @@ describe('accessRequest model', () => {
     it('should return error if period is missing', () => {
         const req = new RequestAccess({
             type: "GUEST",
-            vessleCode: "S9F22D1",
+            vesselCode: "S9F22D1",
             checkIn: 1581191756216
         });
         const res = ValidateRequest(req);
         expect(res.error.message).toEqual(expect.stringMatching(/is required$/));
     });
 
-    it('should return error if vessleCode is missing', () => {
+    it('should return error if vesselCode is missing', () => {
         const req = new RequestAccess({
             type: "GUEST",
             period: 86400000,
@@ -46,7 +46,7 @@ describe('accessRequest model', () => {
         const req = new RequestAccess({
             type: "GUEST",
             period: 86400000,
-            vessleCode: "S9F22D1"
+            vesselCode: "S9F22D1"
         });
         const res = ValidateRequest(req);
         expect(res.error.message).toEqual(expect.stringMatching(/is required$/));

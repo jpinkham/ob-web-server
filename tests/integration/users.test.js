@@ -679,7 +679,7 @@ describe('/api/users', () => {
                 seaPods:[{
                     _id: mongoose.Types.ObjectId().toHexString(),
                     SeaPodName: "SeaPod Name",
-                    vessleCode: "S743355",
+                    vesselCode: "S743355",
                 }],
                 isVerified:true,
                 accessRequests:[],
@@ -712,7 +712,7 @@ describe('/api/users', () => {
                 seaPods:[{
                     _id: mongoose.Types.ObjectId().toHexString(),
                     SeaPodName: "SeaPod Name",
-                    vessleCode: "S743355",
+                    vesselCode: "S743355",
                     users: [{
                         _id: userId,
                         isDisabled: false,
@@ -735,7 +735,7 @@ describe('/api/users', () => {
             const res = await exec();
             expect(res.status).toBe(200);
             expect(res.body[0]).toHaveProperty('SeaPodName');
-            expect(res.body[0]).toHaveProperty('vessleCode');
+            expect(res.body[0]).toHaveProperty('vesselCode');
         })
 
         it("should return 404 if user's seapod not found", async () => {

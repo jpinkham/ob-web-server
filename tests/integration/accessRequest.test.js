@@ -50,7 +50,7 @@ describe('/api/accessRequest', () => {
                 },
                 seaPod: {
                     name: 'name name',
-                    vessleCode: 'SE1699B',
+                    vesselCode: 'SE1699B',
                 },
                 type: 'GUEST',
                 checkIn: 1581191756216
@@ -128,7 +128,7 @@ describe('/api/accessRequest', () => {
                 request: {
                     type: "GUEST",
                     period: 86400000,
-                    vessleCode: "SE1699B",
+                    vesselCode: "SE1699B",
                     checkIn: 1581191756216
                 }
             };
@@ -156,7 +156,7 @@ describe('/api/accessRequest', () => {
                 request: {
                     type: "GUEST",
                     period: 86400000,
-                    vessleCode: "SE1699B",
+                    vesselCode: "SE1699B",
                     checkIn: 1581191756216
                 }
             };
@@ -196,7 +196,7 @@ describe('/api/accessRequest', () => {
             const seapod = {
                 _id: mongoose.Types.ObjectId().toHexString(),
                 SeaPodName:'name name',
-                vessleCode: body.request.vessleCode,
+                vesselCode: body.request.vesselCode,
                 accessRequests: [],
                 users: [ {
                         isDisabled: false,
@@ -247,7 +247,7 @@ describe('/api/accessRequest', () => {
                 },
                 seaPod: {
                     name: 'name name',
-                    vessleCode: 'SE1699B',
+                    vesselCode: 'SE1699B',
                 },
                 type: 'GUEST',
                 checkIn: 1581191756216,
@@ -371,7 +371,7 @@ describe('/api/accessRequest', () => {
                 },
                 seaPod: {
                     name: 'name name',
-                    vessleCode: 'SE1699B',
+                    vesselCode: 'SE1699B',
                 },
                 type: 'GUEST',
                 checkIn: 1581191756216,
@@ -515,7 +515,7 @@ describe('/api/accessRequest', () => {
                 },
                 seaPod: {
                     name: 'name name',
-                    vessleCode: 'SE1699B',
+                    vesselCode: 'SE1699B',
                 },
                 type: 'MEMBER',
                 checkIn: 1581191756216,
@@ -641,7 +641,7 @@ describe('/api/accessRequest', () => {
             };            
             const seapod = {
                 SeaPodName: "name name",
-                vessleCode: "SE1699B",
+                vesselCode: "SE1699B",
                 accessRequests: [],
                 users: users,
                 permissionSets: [ {
@@ -695,7 +695,7 @@ describe('/api/accessRequest', () => {
             seapod = {
                 _id: seapodId,
                 SeaPodName: "name name",
-                vessleCode: "SE1699B",
+                vesselCode: "SE1699B",
                 accessInvitation: [],
                 users: [{
                     _id: userId,
@@ -767,7 +767,7 @@ describe('/api/accessRequest', () => {
                 seaPod: {
                     _id: seapodId,
                     name: 'name name',
-                    vessleCode: 'SE1699B',
+                    vesselCode: 'SE1699B',
                 },
                 type: 'GUEST',
                 checkIn: 1581191756216,
@@ -891,7 +891,7 @@ describe('/api/accessRequest', () => {
             seapod = {
                 _id: seapodId,
                 SeaPodName: "name name",
-                vessleCode: "SE1699B",
+                vesselCode: "SE1699B",
                 accessInvitation: [],
                 users: [{
                     _id: userId,
@@ -919,7 +919,7 @@ describe('/api/accessRequest', () => {
                 },
                 seaPod: {
                     name: 'name name',
-                    vessleCode: 'SE1699B',
+                    vesselCode: 'SE1699B',
                 },
                 type: 'MEMBER',
                 checkIn: 1581191756216,
@@ -1040,7 +1040,7 @@ describe('/api/accessRequest', () => {
             seapod = {
                 _id: seapodId,
                 SeaPodName: "name name",
-                vessleCode: "SE1699B",
+                vesselCode: "SE1699B",
                 accessInvitation: [],
                 users: [{
                     _id: userId,
@@ -1064,7 +1064,7 @@ describe('/api/accessRequest', () => {
                 },
                 seaPod: {
                     name: 'name name',
-                    vessleCode: 'SE1699B',
+                    vesselCode: 'SE1699B',
                 },
                 type: 'MEMBER',
                 checkIn: 1581191756216,
@@ -1182,7 +1182,7 @@ describe('/api/accessRequest', () => {
             seapod = {
                 _id: seapodId,
                 SeaPodName: "name name",
-                vessleCode: "SE1699B",
+                vesselCode: "SE1699B",
                 accessInvitation: [],
                 users: [{
                     _id: userId,
@@ -1206,7 +1206,7 @@ describe('/api/accessRequest', () => {
                 },
                 seaPod: {
                     name: 'name name',
-                    vessleCode: 'SE1699B',
+                    vesselCode: 'SE1699B',
                 },
                 type: 'MEMBER',
                 checkIn: 1581191756216,
@@ -1324,7 +1324,7 @@ describe('/api/accessRequest', () => {
             seapod = {
                 _id: mongoose.Types.ObjectId().toHexString(),
                 SeaPodName: "name name",
-                vessleCode: "SE1699B",
+                vesselCode: "SE1699B",
                 accessRequests: [],
                 users: [ {
                         isDisabled: false,
@@ -1339,7 +1339,7 @@ describe('/api/accessRequest', () => {
             body = {
                 type: "GUEST",
                 period: 86400000,
-                vessleCode: "SE1699B",
+                vesselCode: "SE1699B",
                 checkIn: 1581191756216
             };
 
@@ -1354,7 +1354,7 @@ describe('/api/accessRequest', () => {
                 },
                 seaPod: {
                     name: 'name name',
-                    vessleCode: 'SE1699B',
+                    vesselCode: 'SE1699B',
                 },
                 type: 'GUEST',
                 checkIn: 1581191756216,
@@ -1434,7 +1434,7 @@ describe('/api/accessRequest', () => {
 
             body = {
                 period: 86400000,
-                vessleCode: "SE1699B",
+                vesselCode: "SE1699B",
                 checkIn: 1581191756216
             }
             const res = await exec(body);
@@ -1514,7 +1514,7 @@ describe('/api/accessRequest', () => {
             body = {
                 type: "OWNER",
                 period: 86400000,
-                vessleCode: "SE1699B",
+                vesselCode: "SE1699B",
                 checkIn: 1581191756216
             };
             const res = await exec(body);
@@ -1541,7 +1541,7 @@ describe('/api/accessRequest', () => {
             body = {
                 type: "OWNER",
                 period: 86400000,
-                vessleCode: "SE1699B",
+                vesselCode: "SE1699B",
                 checkIn: 1581191756216
             };
             const res = await exec(body); 

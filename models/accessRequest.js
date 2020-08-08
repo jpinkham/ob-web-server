@@ -42,7 +42,7 @@ const RequestAccess = mongoose.model('ReqestAccess', new mongoose.Schema({
                 minlength: 5,
                 maxlength: 50
             },
-            vessleCode: {
+            vesselCode: {
                 type: String,
                 required: true,
                 match: vesselCodeRegx,
@@ -87,7 +87,7 @@ function ValidateRequest(request) {
     const schema = Joi.object({
         type: Joi.string().required(),
         period: Joi.number().required(),
-        vessleCode: Joi.string().required().regex(vesselCodeRegx),
+        vesselCode: Joi.string().required().regex(vesselCodeRegx),
         checkIn: Joi.number().required()
     });
 
