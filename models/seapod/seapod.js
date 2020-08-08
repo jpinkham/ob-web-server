@@ -164,11 +164,11 @@ const seaPodSchema = new mongoose.Schema({
     },
     accessRequests: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'ReqestAccess'
+        ref: 'RequestAccess'
     }],
     accessInvitation: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'ReqestAccess'
+        ref: 'RequestAccess'
     }],
 });
 

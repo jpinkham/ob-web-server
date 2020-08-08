@@ -20,14 +20,14 @@ class SeaPodService {
                     path: 'seaPods',
                     populate: {
                         path: 'accessRequests',
-                        model: 'ReqestAccess'
+                        model: 'RequestAccess'
                     }
                 })
                 .populate({
                     path: 'seaPods',
                     populate: {
                         path: 'accessInvitation',
-                        model: 'ReqestAccess'
+                        model: 'RequestAccess'
                     }
                 })
                 .populate({

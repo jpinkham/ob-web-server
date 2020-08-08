@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Joi = require('@hapi/joi');
 
 const vesselCodeRegx = /^S[0-9A-Fa-f]{6}/;
-const RequestAccess = mongoose.model('ReqestAccess', new mongoose.Schema({
+const RequestAccess = mongoose.model('RequestAccess', new mongoose.Schema({
     user: {
         type: new mongoose.Schema({
             _id: {

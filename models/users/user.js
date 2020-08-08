@@ -20,11 +20,11 @@ const userSchema = extendSchema(personSchema, {
     },
     accessRequests: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'ReqestAccess'
+        ref: 'RequestAccess'
     }],
     accessInvitation: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'ReqestAccess'
+        ref: 'RequestAccess'
     }],
     tokensAndDevices: [tokenAndDevice],
 });
