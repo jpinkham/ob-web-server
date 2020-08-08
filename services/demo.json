@@ -57,7 +57,7 @@
     {
       "_id": "5f048586fb3b3621dc3d8b51",
       "source": "seapod",
-      "sceneName": "Raniy Day",
+      "sceneName": "Rainy Day",
       "rooms": [
         {
             "label": "BedRoom",
@@ -111,7 +111,7 @@
     {
       "_id": "5f0485bffb3b3621dc3d8b5a",
       "source": "user",
-      "sceneName": "Raniy Day",
+      "sceneName": "Rainy Day",
       "rooms": [
         {
             "label": "BedRoom",
