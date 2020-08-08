@@ -26,7 +26,7 @@ class UserService {
             model: obj.model,
         });
 
-        user.actionHistorys.push({
+        user.actionHistories.push({
             action: "Account Registration",
             actionResult: "SUCCEEDED",
             tokenAndDeviceId: user.tokensAndDevices[0]._id,

@@ -22,7 +22,7 @@ $env:OB_sendgrid=yourEmailSeviceKey
 $env:NODE_ENV=nodeEnvironment 
 
 $env:USER_SALT=number
-$env:ADMIN_SLAT=number
+$env:ADMIN_SALT=number
 
 $env:FIREBASE_PROJECT_ID=yourProjectId 
 $env:FIREBASE_PRIVATE_KEY=yourPrivateKey

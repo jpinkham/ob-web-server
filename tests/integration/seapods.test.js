@@ -54,7 +54,7 @@ describe('/api/seapods', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{
@@ -192,7 +192,7 @@ describe('/api/seapods', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{
@@ -326,7 +326,7 @@ describe('/api/seapods', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{

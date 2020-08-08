@@ -180,7 +180,7 @@ describe('/api/auth', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{
@@ -276,7 +276,7 @@ describe('/api/auth', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{

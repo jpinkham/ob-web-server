@@ -122,7 +122,7 @@ class AuthService {
 
         let tokenAndDeviceId = this.logReturnTokenAndDeviceId(obj, jti, user.tokensAndDevices);
 
-        user.actionHistorys.push({
+        user.actionHistories.push({
             action: "LOGIN",
             actionResult: "SUCCEEDED",
             tokenAndDeviceId: tokenAndDeviceId,
@@ -351,7 +351,7 @@ class AuthService {
 
             let tokenAndDeviceId = this.logReturnTokenAndDeviceId(req, jti, user.tokensAndDevices);
 
-            user.actionHistorys.push({
+            user.actionHistories.push({
                 action: "LOGIN",
                 actionResult: "SUCCEEDED",
                 tokenAndDeviceId: tokenAndDeviceId,

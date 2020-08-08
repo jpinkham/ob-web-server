@@ -54,7 +54,7 @@ describe('/api/users', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{
@@ -176,7 +176,7 @@ describe('/api/users', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{
@@ -332,7 +332,7 @@ describe('/api/users', () => {
                         _id: mongoose.Types.ObjectId().toHexString()
                     },                
                 ],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{
@@ -447,7 +447,7 @@ describe('/api/users', () => {
                         _id: notificationId
                     },                
                 ],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{
@@ -567,7 +567,7 @@ describe('/api/users', () => {
                         _id: notificationId
                     },                
                 ],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{
@@ -692,7 +692,7 @@ describe('/api/users', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{
@@ -788,7 +788,7 @@ describe('/api/users', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{
@@ -888,7 +888,7 @@ describe('/api/users', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[{
                     _id: contactId,
@@ -1003,7 +1003,7 @@ describe('/api/users', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[{
                     _id: contactId,

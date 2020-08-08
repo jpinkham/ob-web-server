@@ -124,7 +124,7 @@ describe('user service', () => {
                 country:"Egypt",
                 loginAuditTrails:[],
                 notifications:[],
-                actionHistorys:[],
+                actionHistories:[],
                 loginHistory:[],
                 emergencyContacts:[],
                 tokensAndDevices:[{

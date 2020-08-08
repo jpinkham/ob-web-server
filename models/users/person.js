@@ -46,7 +46,7 @@ module.exports = new mongoose.Schema({
     
     loginAuditTrails: [loginAuditTrail],
     notifications: [notification],
-    actionHistorys: [actionHistory],
+    actionHistories: [actionHistory],
     previousPasswords: [String],
     resetPasswordToken: {type:String},
     resetPasswordExpires: {type:Date},

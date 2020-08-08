@@ -18,7 +18,7 @@ class AdminService {
             const salt = await bcrypt.genSalt(saltRounds);
             admin.password = await bcrypt.hash(admin.password, salt);
 
-            admin.actionHistorys.push({
+            admin.actionHistories.push({
                 action: "Account Registration",
                 actionResult: "SUCCEEDED",
                 tokenAndDeviceId: admin._id,
@@ -87,7 +87,7 @@ class AdminService {
 
         admin.tokens.push(eAdminJwt);
 
-        admin.actionHistorys.push({
+        admin.actionHistories.push({
             action: "VERIFIY TOTP TOKEN",
             actionResult: "SUCCEEDED",
             tokenAndDeviceId: admin._id,
@@ -125,7 +125,7 @@ class AdminService {
                 statusCode: 400,
                 error: "Invalid email or password"
             }
-            admin.actionHistorys.push({
+            admin.actionHistories.push({
                 action: "Account LOGIN",
                 actionResult: "SUCCEEDED",
                 tokenAndDeviceId: admin._id,
