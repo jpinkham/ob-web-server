@@ -59,7 +59,7 @@ const seaPodSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    bedAndLivingRoomEnclousure: {
+    bedAndLivingRoomEnclosure: {
         type: String,
         required: true
     },
@@ -216,7 +216,7 @@ function validateSeaPod(SeaPod) {
         sparFinish: Joi.string().required(),
         sparDesign: Joi.string().required(),
         deckEnclosure: Joi.string().required(),
-        bedAndLivingRoomEnclousure: Joi.string().required(),
+        bedAndLivingRoomEnclosure: Joi.string().required(),
         power: Joi.string().required(),
         powerUtilities: Joi.array().items(Joi.string()),
         underWaterRoomFinishing: Joi.string().required(),

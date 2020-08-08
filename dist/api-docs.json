@@ -112,7 +112,7 @@
                     "deckEnclosure": {
                       "type": "string"
                     },
-                    "bedAndLivingRoomEnclousure": {
+                    "bedAndLivingRoomEnclosure": {
                       "type": "string"
                     },
                     "power": {
@@ -201,7 +201,7 @@
                   "sparFinish": "sparFinish",
                   "sparDesign": "sparDesign",
                   "deckEnclosure": "deckEnclosure",
-                  "bedAndLivingRoomEnclousure": "bedAndLivingRoomEnclousure",
+                  "bedAndLivingRoomEnclosure": "bedAndLivingRoomEnclosure",
                   "power": "power",
                   "powerUtilities": [],
                   "underWaterRoomFinishing": "underWaterRoomFinishing",
@@ -448,7 +448,7 @@
                 "deckEnclosure": {
                   "type": "string"
                 },
-                "bedAndLivingRoomEnclousure": {
+                "bedAndLivingRoomEnclosure": {
                   "type": "string"
                 },
                 "power": {
@@ -526,7 +526,7 @@
                 "sparFinish": "sparFinish",
                 "sparDesign": "sparDesign",
                 "deckEnclosure": "deckEnclosure",
-                "bedAndLivingRoomEnclousure": "bedAndLivingRoomEnclousure",
+                "bedAndLivingRoomEnclosure": "bedAndLivingRoomEnclosure",
                 "power": "power",
                 "powerUtilities": [],
                 "underWaterRoomFinishing": "underWaterRoomFinishing",

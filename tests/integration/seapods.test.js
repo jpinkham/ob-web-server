@@ -72,7 +72,7 @@ describe('/api/seapods', () => {
                 sparFinish: "sparFinish",
                 sparDesign: "sparDesign",
                 deckEnclosure: "deckEnclosure",
-                bedAndLivingRoomEnclousure: "bedAndLivingRoomEnclousure",
+                bedAndLivingRoomEnclosure: "bedAndLivingRoomEnclosure",
                 power: "power",
                 powerUtilities: [],
                 underWaterRoomFinishing: "underWaterRoomFinishing",
