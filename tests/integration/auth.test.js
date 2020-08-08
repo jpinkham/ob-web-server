@@ -61,7 +61,7 @@ describe('/api/auth', () => {
                     soundSystem: [],
                     masterBedroomFloorFinishing: [],
                     masterBedroomInteriorWallColor: "0xff3399FF",
-                    livingRoomloorFinishing: "livingRoomloorFinishing",
+                    livingRoomFloorFinishing: "livingRoomFloorFinishing",
                     livingRoomInteriorWallColor: "0xff3399FF",
                     kitchenfloorFinishing: "kitchenfloorFinishing",
                     kitchenInteriorWallColor: "0xff3399FF",

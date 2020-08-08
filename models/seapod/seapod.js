@@ -89,7 +89,7 @@ const seaPodSchema = new mongoose.Schema({
         required: true,
         match: hexColorsRegEx
     },
-    livingRoomloorFinishing: {
+    livingRoomFloorFinishing: {
         type: String,
         required: true
     },
@@ -224,7 +224,7 @@ function validateSeaPod(SeaPod) {
         soundSystem: Joi.array().items(Joi.string()),
         masterBedroomFloorFinishing: Joi.array().items(Joi.string()),
         masterBedroomInteriorWallColor: Joi.string().pattern(hexColorsRegEx).required(),
-        livingRoomloorFinishing: Joi.string().required(),
+        livingRoomFloorFinishing: Joi.string().required(),
         livingRoomInteriorWallColor: Joi.string().pattern(hexColorsRegEx).required(),
         kitchenfloorFinishing: Joi.string().required(),
         kitchenInteriorWallColor: Joi.string().pattern(hexColorsRegEx).required(),

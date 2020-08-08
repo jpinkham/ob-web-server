@@ -146,7 +146,7 @@
                       "type": "string",
                       "pattern": "^0xFF[A-F0-9]{6}$"
                     },
-                    "livingRoomloorFinishing": {
+                    "livingRoomFloorFinishing": {
                       "type": "string"
                     },
                     "livingRoomInteriorWallColor": {
@@ -209,7 +209,7 @@
                   "soundSystem": [],
                   "masterBedroomFloorFinishing": [],
                   "masterBedroomInteriorWallColor": "0xff123456",
-                  "livingRoomloorFinishing": "livingRoomloorFinishing",
+                  "livingRoomFloorFinishing": "livingRoomFloorFinishing",
                   "livingRoomInteriorWallColor": "0xff123456",
                   "kitchenfloorFinishing": "kitchenfloorFinishing",
                   "kitchenInteriorWallColor": "0xff123456",
@@ -482,7 +482,7 @@
                   "type": "string",
                   "pattern": "^0xFF[A-F0-9]{6}$"
                 },
-                "livingRoomloorFinishing": {
+                "livingRoomFloorFinishing": {
                   "type": "string"
                 },
                 "livingRoomInteriorWallColor": {
@@ -534,7 +534,7 @@
                 "soundSystem": [],
                 "masterBedroomFloorFinishing": [],
                 "masterBedroomInteriorWallColor": "0xff123456",
-                "livingRoomloorFinishing": "livingRoomloorFinishing",
+                "livingRoomFloorFinishing": "livingRoomFloorFinishing",
                 "livingRoomInteriorWallColor": "0xff123456",
                 "kitchenfloorFinishing": "kitchenfloorFinishing",
                 "kitchenInteriorWallColor": "0xff123456",
