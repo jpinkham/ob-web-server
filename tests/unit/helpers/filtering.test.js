@@ -3,7 +3,7 @@ const filtering = require('../../../helpers/filtering');
 describe('filtering helper', () => {    
     it('should return filtered user object with seapod', () => {
         const user = {
-            loginAuditTrials: 'a',
+            loginAuditTrails: 'a',
             tokensAndDevices: []
         };
         const seapod = {
@@ -16,7 +16,7 @@ describe('filtering helper', () => {
         };
         const data = 'a';
         const res = filtering.filterUserAndSeapod(user, seapod, data);
-        expect(res).not.toHaveProperty('loginAuditTrials');
+        expect(res).not.toHaveProperty('loginAuditTrails');
         expect(res).toHaveProperty('seaPods');
         expect(res.seaPods[0]).not.toHaveProperty('actionsHistory');
         expect(res.seaPods[0]).toHaveProperty('data');
@@ -28,13 +28,13 @@ describe('filtering helper', () => {
         ]}
         const user = {
             _id: 1,
-            loginAuditTrials: 'a',
+            loginAuditTrails: 'a',
             tokensAndDevices: [],
             seaPods: [seapod]
         };
         const data = 'a';
         const res = filtering.filterUserAndSeapods(user, data);
-        expect(res).not.toHaveProperty('loginAuditTrials');
+        expect(res).not.toHaveProperty('loginAuditTrails');
         expect(res).toHaveProperty('seaPods');
         expect(res.seaPods[0]).toHaveProperty('user');
     });
@@ -57,17 +57,17 @@ describe('filtering helper', () => {
 
     it('should return filtered user object and filtered token and devices', () => {
         const user = {
-            loginAuditTrials: 'a',
+            loginAuditTrails: 'a',
             tokensAndDevices: []
         };
         const res = filtering.filterUser(user);
-        expect(res).not.toHaveProperty('loginAuditTrials');
+        expect(res).not.toHaveProperty('loginAuditTrails');
     });
 
     it('should return user object with seapods', () => {
         const users = [{
             _id: 1,
-            loginAuditTrials: 'a',
+            loginAuditTrails: 'a',
             tokensAndDevices: [{
                 _id: 1,
                 jti: 2

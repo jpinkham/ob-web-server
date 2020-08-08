@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-let loginAuditTrial = require('./loginAduitTrial');
+let loginAuditTrail = require('./loginAduitTrial');
 const notification = require('./notification');
 const actionHistory = require('./actionHistory');
 const loginHistory = require('./loginHistory');
@@ -44,7 +44,7 @@ module.exports = new mongoose.Schema({
         match: /[A-Za-z]./
     },
     
-    loginAuditTrials: [loginAuditTrial],
+    loginAuditTrails: [loginAuditTrail],
     notifications: [notification],
     actionHistorys: [actionHistory],
     previousPasswords: [String],

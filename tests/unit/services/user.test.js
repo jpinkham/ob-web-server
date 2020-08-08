@@ -122,7 +122,7 @@ describe('user service', () => {
                 mobileNumber:"+201111111111",
                 password:"passworD@123",
                 country:"Egypt",
-                loginAuditTrials:[],
+                loginAuditTrails:[],
                 notifications:[],
                 actionHistorys:[],
                 loginHistory:[],

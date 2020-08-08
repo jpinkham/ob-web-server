@@ -1,7 +1,7 @@
 const _ = require('lodash');
 
 function filterUserData(user) {
-    return _.omit(user, ['loginAuditTrials', 'tokensAndDevices', 'actionHistorys', 'previousPasswords', 'loginHistory', 'password']);
+    return _.omit(user, ['loginAuditTrails', 'tokensAndDevices', 'actionHistorys', 'previousPasswords', 'loginHistory', 'password']);
 }
 
 function filterSeapodData(seapod) {

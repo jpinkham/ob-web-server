@@ -2013,7 +2013,7 @@
       "mobileNumber": "+20156432452",
       "password": "$2b$11$PumbFaU6U8H8yaALg6d8UeQER6MZFl5RI3dY19fluj5r9eQ1jKzMu",
       "country": "Spain",
-      "loginAuditTrials": [],
+      "loginAuditTrails": [],
       "notifications": [
         {
           "seen": false,
@@ -2181,7 +2181,7 @@
       "mobileNumber": "+201092101362",
       "password": "$2b$11$FWZaI7Jhnc/QTiGDVbvrLukGuoEpByXdR1xstpV4Cd21ioE/lpnLC",
       "country": "Egypt",
-      "loginAuditTrials": [],
+      "loginAuditTrails": [],
       "notifications": [
         {
           "seen": false,
@@ -2283,7 +2283,7 @@
       "mobileNumber": "+201113216161",
       "password": "$2b$11$jHEoD/aZEQWyoBCHRLLbce7ok86eEU780w45xDHsK5cMHZFKRK4MC",
       "country": "Egypt",
-      "loginAuditTrials": [],
+      "loginAuditTrails": [],
       "notifications": [
         {
           "seen": false,
@@ -2355,7 +2355,7 @@
       "mobileNumber": "+3274455263852",
       "password": "$2b$11$dgAklrhHKPMfTXCuGQMgBu6DpoMG8I3gwKrs4kbhUxkhM97sB3prC",
       "country": "India",
-      "loginAuditTrials": [],
+      "loginAuditTrails": [],
       "notifications": [
         {
           "seen": false,
