@@ -1,7 +1,7 @@
-const loginAduitTrialSchema = require('./loginAduitTrial');
+const loginAuditTrailSchema = require('./loginAuditTrail');
 const extendSchema = require('../../helpers/extendSchema')
 
-module.exports = extendSchema(loginAduitTrialSchema, {
+module.exports = extendSchema(loginAuditTrailSchema, {
     loginResult: {
         type: String,
         enum: ['SUCCEEDED', 'FAILD']

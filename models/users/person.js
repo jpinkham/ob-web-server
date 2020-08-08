@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-let loginAuditTrail = require('./loginAduitTrial');
+let loginAuditTrail = require('./loginAuditTrail');
 const notification = require('./notification');
 const actionHistory = require('./actionHistory');
 const loginHistory = require('./loginHistory');
