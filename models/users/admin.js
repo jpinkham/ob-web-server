@@ -14,7 +14,7 @@ const adminSchema = extendSchema(personSchema, {
         enum: ['NOT VERIFIED', 'EMAIL', 'MOBILE'],
         default: 'NOT VERIFIED'
     },
-    adminstrationLevel: {
+    administrationLevel: {
         type: String,
         enum: ['ADMIN', 'MASTER'],
         default: 'ADMIN'
