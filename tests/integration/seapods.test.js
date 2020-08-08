@@ -68,7 +68,7 @@ describe('/api/seapods', () => {
             body = {
                 SeaPodName: "SeaPod Name",
                 exteriorFinish: "exfinish",
-                exterioirColor: "0xff3399FF",
+                exteriorColor: "0xff3399FF",
                 sparFinish: "sparFinish",
                 sparDesign: "sparDesign",
                 deckEnclosure: "deckEnclosure",

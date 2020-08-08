@@ -42,7 +42,7 @@ const seaPodSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    exterioirColor: {
+    exteriorColor: {
         type: String,
         required: true,
         match: hexColorsRegEx
@@ -212,7 +212,7 @@ function validateSeaPod(SeaPod) {
     const schema = Joi.object({
         SeaPodName: Joi.string().min(5).max(50).required(),
         exteriorFinish: Joi.string().required(),
-        exterioirColor: Joi.string().pattern(hexColorsRegEx).required(),
+        exteriorColor: Joi.string().pattern(hexColorsRegEx).required(),
         sparFinish: Joi.string().required(),
         sparDesign: Joi.string().required(),
         deckEnclosure: Joi.string().required(),

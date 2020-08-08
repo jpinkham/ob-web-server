@@ -49,7 +49,7 @@ describe('/api/auth', () => {
                 seaPod: {
                     SeaPodName: "SeaPod Name",
                     exteriorFinish: "exfinish",
-                    exterioirColor: "0xff3399FF",
+                    exteriorColor: "0xff3399FF",
                     sparFinish: "sparFinish",
                     sparDesign: "sparDesign",
                     deckEnclosure: "deckEnclosure",

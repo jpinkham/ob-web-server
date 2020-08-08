@@ -99,7 +99,7 @@
                     "exteriorFinish": {
                       "type": "string"
                     },
-                    "exterioirColor": {
+                    "exteriorColor": {
                       "type": "string",
                       "pattern": "^0xFF[A-F0-9]{6}$"
                     },
@@ -197,7 +197,7 @@
                 "seaPod": {
                   "SeaPodName": "Sea Breeze",
                   "exteriorFinish": "exfinish",
-                  "exterioirColor": "0xff123456",
+                  "exteriorColor": "0xff123456",
                   "sparFinish": "sparFinish",
                   "sparDesign": "sparDesign",
                   "deckEnclosure": "deckEnclosure",
@@ -435,7 +435,7 @@
                 "exteriorFinish": {
                   "type": "string"
                 },
-                "exterioirColor": {
+                "exteriorColor": {
                   "type": "string",
                   "pattern": "^0xFF[A-F0-9]{6}$"
                 },
@@ -522,7 +522,7 @@
               "example": {
                 "SeaPodName": "Sea Breeze",
                 "exteriorFinish": "exfinish",
-                "exterioirColor": "0xff123456",
+                "exteriorColor": "0xff123456",
                 "sparFinish": "sparFinish",
                 "sparDesign": "sparDesign",
                 "deckEnclosure": "deckEnclosure",
