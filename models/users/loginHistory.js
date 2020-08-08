@@ -4,6 +4,6 @@ const extendSchema = require('../../helpers/extendSchema')
 module.exports = extendSchema(loginAuditTrailSchema, {
     loginResult: {
         type: String,
-        enum: ['SUCCEEDED', 'FAILD']
+        enum: ['SUCCEEDED', 'FAILED']
     }
 });
